@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #070c24;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 900px;
+    height: 600px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.container .imgBx {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    background: #006dbc;
+}
+
+.container .imgBx::before {
+    content: "Nike";
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    color: #000;
+    opacity: 0.2;
+    font-weight: 800;
+    font-size: 6em;
+}
+
+.container .imgBx img {
+    position: relative;
+    transform: rotate(-20deg);
+    left: -32px;
+}
+
+.details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    padding: 40px;
+}
+
+.details h2 {
+    font-size: 2.5em;
+    line-height: 0.8em;
+}
+
+.details h2 span {
+    font-size: 0.4em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #999;
+}
+
+.details p {
+    max-width: 85%;
+    margin-left: 15%;
+    font-size: 15px;
+}
+
+.details h3 {
+    font-size: 2.5em;
+    color: #a2a2a2;
+    float: left;
+}
+
+.details button {
+    background: #006dbc;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: 15px 20px;
+    margin-top: 5px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 40px;
+    float: right;
+    cursor: pointer;
+}
+
+
+/* responsive */
+@media (max-width: 1080px) {
+    .container {
+        height: auto;
+    }
+    .container .imgBx {
+        padding: 10px;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    .container .imgBx img {
+        transform: rotate(0deg);
+        width: 100%;
+        left: 0;
+    }
+
+    .details {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .details p {
+        margin-left: 0;
+        max-width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
